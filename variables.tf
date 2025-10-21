@@ -1,4 +1,4 @@
-variable "ami_id" {
+variable "ami" {
     type = string
     default = "ami-09c813fb71547fc4f"
 }
@@ -6,7 +6,7 @@ variable "instance_type" {
     type = string
     default = "t3.micro"
 }
-variable "sg_ids" {
+variable "vpc_security_group_ids" {
     type = list
     default = ["sg-035d20b8228c4dd3e"]
 }
