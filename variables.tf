@@ -1,20 +1,16 @@
 variable "ami_id" {
     type = string
-    description = "This AMI is used to create the instance"
+    default = "ami-09c813fb71547fc4f"
 }
-
 variable "instance_type" {
     type = string
-    description = "Create the instance of this type"
+    default = "t3.micro"
 }
-
 variable "sg_ids" {
     type = list
-    description = "list of security group ids"
+    default = ["sg-035d20b8228c4dd3e"]
 }
-
 variable "tags" {
     type = map
     default = {}  # it is not a mandatory variable
 }
-
